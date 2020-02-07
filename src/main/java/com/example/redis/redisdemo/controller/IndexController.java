@@ -29,9 +29,6 @@ public class IndexController {
     @Value("${server.port}")
     private String port;
 
-//    @Autowired
-//    private UserDemoMapper userDemoMapper;
-
     @RequestMapping("/hi")
     public String hi(String name) {
         return "hi " + name + " , l am " + port + " port";
